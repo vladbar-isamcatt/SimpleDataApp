@@ -74,6 +74,7 @@ namespace SimpleDataApp
 			this.btnFindByOrderID.TabIndex = 3;
 			this.btnFindByOrderID.Text = "Найти заказ";
 			this.btnFindByOrderID.UseVisualStyleBackColor = true;
+			this.btnFindByOrderID.Click += new System.EventHandler(this.btnFindByOrderID_Click);
 			// 
 			// btnCancelOrder
 			// 
@@ -83,6 +84,7 @@ namespace SimpleDataApp
 			this.btnCancelOrder.TabIndex = 4;
 			this.btnCancelOrder.Text = "Отменить заказ";
 			this.btnCancelOrder.UseVisualStyleBackColor = true;
+			this.btnCancelOrder.Click += new System.EventHandler(this.btnCancelOrder_Click);
 			// 
 			// btnFillorder
 			// 
@@ -92,6 +94,7 @@ namespace SimpleDataApp
 			this.btnFillorder.TabIndex = 5;
 			this.btnFillorder.Text = "Заполнить заказ";
 			this.btnFillorder.UseVisualStyleBackColor = true;
+			this.btnFillorder.Click += new System.EventHandler(this.btnFillorder_Click);
 			// 
 			// btnFinishUpdates
 			// 
@@ -101,6 +104,7 @@ namespace SimpleDataApp
 			this.btnFinishUpdates.TabIndex = 6;
 			this.btnFinishUpdates.Text = "Готово";
 			this.btnFinishUpdates.UseVisualStyleBackColor = true;
+			this.btnFinishUpdates.Click += new System.EventHandler(this.btnFinishUpdates_Click);
 			// 
 			// dtpFillDate
 			// 
@@ -138,6 +142,7 @@ namespace SimpleDataApp
 			this.Controls.Add(this.labelOrderID);
 			this.Name = "FillOrCancel";
 			this.Text = "Заполнение или отмена заказов";
+			this.Load += new System.EventHandler(this.FillOrCancel_Load);
 			((System.ComponentModel.ISupportInitialize)(this.dgvCustomerOrders)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
