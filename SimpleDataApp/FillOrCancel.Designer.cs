@@ -112,6 +112,7 @@ namespace SimpleDataApp
 			// 
 			// dgvCustomerOrders
 			// 
+			this.dgvCustomerOrders.BackgroundColor = System.Drawing.SystemColors.Control;
 			this.dgvCustomerOrders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dgvCustomerOrders.Location = new System.Drawing.Point(12, 77);
 			this.dgvCustomerOrders.Name = "dgvCustomerOrders";

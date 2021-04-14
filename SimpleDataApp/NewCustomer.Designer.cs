@@ -137,7 +137,7 @@ namespace SimpleDataApp
 			// 
 			this.btnAddFinish.Location = new System.Drawing.Point(12, 288);
 			this.btnAddFinish.Name = "btnAddFinish";
-			this.btnAddFinish.Size = new System.Drawing.Size(75, 23);
+			this.btnAddFinish.Size = new System.Drawing.Size(72, 23);
 			this.btnAddFinish.TabIndex = 10;
 			this.btnAddFinish.Text = "Готово";
 			this.btnAddFinish.UseVisualStyleBackColor = true;
