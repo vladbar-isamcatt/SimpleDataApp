@@ -40,7 +40,7 @@ namespace SimpleDataApp
 			this.btnCreateAccount = new System.Windows.Forms.Button();
 			this.btnPlaceOrder = new System.Windows.Forms.Button();
 			this.btnAddFinish = new System.Windows.Forms.Button();
-			this.button4 = new System.Windows.Forms.Button();
+			this.btnAddAnotherAccount = new System.Windows.Forms.Button();
 			this.numOrderAmount = new System.Windows.Forms.NumericUpDown();
 			this.dtpOrderDate = new System.Windows.Forms.DateTimePicker();
 			((System.ComponentModel.ISupportInitialize)(this.numOrderAmount)).BeginInit();
@@ -123,6 +123,7 @@ namespace SimpleDataApp
 			this.btnCreateAccount.TabIndex = 8;
 			this.btnCreateAccount.Text = "Создать учетную запись";
 			this.btnCreateAccount.UseVisualStyleBackColor = true;
+			this.btnCreateAccount.Click += new System.EventHandler(this.btnCreateAccount_Click);
 			// 
 			// btnPlaceOrder
 			// 
@@ -132,6 +133,7 @@ namespace SimpleDataApp
 			this.btnPlaceOrder.TabIndex = 9;
 			this.btnPlaceOrder.Text = "Разместить заказ";
 			this.btnPlaceOrder.UseVisualStyleBackColor = true;
+			this.btnPlaceOrder.Click += new System.EventHandler(this.btnPlaceOrder_Click);
 			// 
 			// btnAddFinish
 			// 
@@ -141,15 +143,17 @@ namespace SimpleDataApp
 			this.btnAddFinish.TabIndex = 10;
 			this.btnAddFinish.Text = "Готово";
 			this.btnAddFinish.UseVisualStyleBackColor = true;
+			this.btnAddFinish.Click += new System.EventHandler(this.btnAddFinish_Click);
 			// 
-			// button4
+			// btnAddAnotherAccount
 			// 
-			this.button4.Location = new System.Drawing.Point(227, 288);
-			this.button4.Name = "button4";
-			this.button4.Size = new System.Drawing.Size(202, 23);
-			this.button4.TabIndex = 11;
-			this.button4.Text = "Добавить другую учетную запись";
-			this.button4.UseVisualStyleBackColor = true;
+			this.btnAddAnotherAccount.Location = new System.Drawing.Point(227, 288);
+			this.btnAddAnotherAccount.Name = "btnAddAnotherAccount";
+			this.btnAddAnotherAccount.Size = new System.Drawing.Size(202, 23);
+			this.btnAddAnotherAccount.TabIndex = 11;
+			this.btnAddAnotherAccount.Text = "Добавить другую учетную запись";
+			this.btnAddAnotherAccount.UseVisualStyleBackColor = true;
+			this.btnAddAnotherAccount.Click += new System.EventHandler(this.btnAddAnotherAccount_Click);
 			// 
 			// numOrderAmount
 			// 
@@ -178,7 +182,7 @@ namespace SimpleDataApp
 			this.ClientSize = new System.Drawing.Size(440, 328);
 			this.Controls.Add(this.dtpOrderDate);
 			this.Controls.Add(this.numOrderAmount);
-			this.Controls.Add(this.button4);
+			this.Controls.Add(this.btnAddAnotherAccount);
 			this.Controls.Add(this.btnAddFinish);
 			this.Controls.Add(this.btnPlaceOrder);
 			this.Controls.Add(this.btnCreateAccount);
@@ -211,7 +215,7 @@ namespace SimpleDataApp
 		private System.Windows.Forms.Button btnCreateAccount;
 		private System.Windows.Forms.Button btnPlaceOrder;
 		private System.Windows.Forms.Button btnAddFinish;
-		private System.Windows.Forms.Button button4;
+		private System.Windows.Forms.Button btnAddAnotherAccount;
 		private System.Windows.Forms.NumericUpDown numOrderAmount;
 		private System.Windows.Forms.DateTimePicker dtpOrderDate;
 	}
