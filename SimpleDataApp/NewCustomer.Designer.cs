@@ -111,6 +111,7 @@ namespace SimpleDataApp
 			// 
 			this.txtCustomerID.Location = new System.Drawing.Point(162, 84);
 			this.txtCustomerID.Name = "txtCustomerID";
+			this.txtCustomerID.ReadOnly = true;
 			this.txtCustomerID.Size = new System.Drawing.Size(100, 23);
 			this.txtCustomerID.TabIndex = 7;
 			// 
@@ -153,12 +154,18 @@ namespace SimpleDataApp
 			// numOrderAmount
 			// 
 			this.numOrderAmount.Location = new System.Drawing.Point(103, 187);
+			this.numOrderAmount.Maximum = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
 			this.numOrderAmount.Name = "numOrderAmount";
 			this.numOrderAmount.Size = new System.Drawing.Size(159, 23);
 			this.numOrderAmount.TabIndex = 12;
 			// 
 			// dtpOrderDate
 			// 
+			this.dtpOrderDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
 			this.dtpOrderDate.Location = new System.Drawing.Point(90, 223);
 			this.dtpOrderDate.Name = "dtpOrderDate";
 			this.dtpOrderDate.Size = new System.Drawing.Size(172, 23);
